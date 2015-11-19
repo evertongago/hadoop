@@ -1,3 +1,8 @@
+<h1>Requisitos</h1>
+<p>
+Este projeto foi montado sobre uma plataforma Linux (Ubuntu 12.0.4) 64 bits. A versão Docker utilizada é 1.5.0.
+</p>
+
 sudo docker build -t <instance_name> .
 sudo docker run -d -P --name <instance_name> <instance_name>
 sudo docker port <instance_name>
