@@ -11,21 +11,22 @@ Após descarregar o projeto, entre no diretório e execute o seguinte comando pa
 <p align="justify" style="padding-top: 15px;">
 Certifique-se de que a build foi executada corretamente e de que todos os downloads foram executados. Agora você pode criar uma instância Docker dessa máquina. Veja:
 </p>
-<div style="background-color: gainsboro;">
-docker run -d -P --name instance-name instance-name
-</div>
+
+> docker run -d -P --name instance-name instance-name
+
 <p align="justify" style="padding-top: 15px;">
 Execute o comando a seguir para descobrir a porta ssh que a instância foi disponibilizada:
 </p>
-<div style="background-color: gainsboro;">
-docker port instance-name
-</div>
+
+> docker port instance-name
+
 <p align="justify" style="padding-top: 15px;">
 Agora você pode se conectar a instância usando ssh. Veja:
 </p>
-<div style="background-color: gainsboro;">
-ssh root@localhost -p ssh-port
-</div>
+
+> ssh root@localhost -p ssh-port
+
+
 
 sudo docker build -t <instance_name> .
 sudo docker run -d -P --name <instance_name> <instance_name>
