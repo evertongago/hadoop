@@ -1,8 +1,11 @@
-<h1>Requisitos</h1>
+<h2>Introdução</h2>
 <p>
-Este projeto foi montado sobre uma plataforma Linux (Ubuntu 12.0.4) 64 bits. A versão Docker utilizada é 1.5.0.
+Este projeto apresenta um recomendador de conteúdo, criado a partir do Apache Hadoop e Apache Mahout. Criamos esta arquitetura a partir de uma plataforma Linux (Ubuntu 12.0.4) 64 bits e Docker 1.5.0. Os  procedimentos a seguir descrevem passo a passo a configuração do ambiente e a execução do recomendador de conteúdo.
 </p>
-
+<ul>
+  <li>Comando 1</li>
+  <li>Comando 2</li>
+</ul>
 sudo docker build -t <instance_name> .
 sudo docker run -d -P --name <instance_name> <instance_name>
 sudo docker port <instance_name>
