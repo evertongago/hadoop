@@ -1,4 +1,4 @@
-## H2 Introdução
+<h2> Tutorial </h2>
 <p align="justify">
 Este projeto apresenta um recomendador de conteúdo, criado a partir do Apache Hadoop e Apache Mahout. Criamos esta arquitetura a partir de uma plataforma Linux (Ubuntu 12.0.4) 64 bits e Docker 1.5.0. Os  procedimentos a seguir descrevem passo a passo a configuração do ambiente e a execução do recomendador de conteúdo.
 </p>
