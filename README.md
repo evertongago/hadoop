@@ -39,12 +39,6 @@ Inicie o Hadoop.
 > start-all.sh
 
 <p align="justify" style="padding-top: 15px;">
-Mova o arquivo <b>show_recommendations.py?dl=0</b> para o diretório <b>ml-100k</b> e renomeie.
-</p>
-
-> mv show_recommendations.py?dl=0 ml-100k/show_recommendations.py
-
-<p align="justify" style="padding-top: 15px;">
 Entre no diretório <b>ml-100k</b>.
 </p>
 
@@ -60,7 +54,7 @@ Registre o arquivo <b>u.data</b> no Hadoop File System.
 Execute o Job de recomendação de conteúdo do Mahout e aguarde o processamento.
 </p>
 
-> hadoop jar /opt/mahout-distribution-0.9/mahout-distribution-0.10.0-job.jar org.apache.mahout.cf.taste.hadoop.item.RecommenderJob -s SIMILARITY_COOCCURRENCE --input u.data --output output
+> hadoop jar /opt/mahout-distribution-0.9/mahout-core-0.9-job.jar org.apache.mahout.cf.taste.hadoop.item.RecommenderJob -s SIMILARITY_COOCCURRENCE --input u.data --output output
 
 <p align="justify" style="padding-top: 15px;">
 Recupere a lista de recumendação do Hadoop File System e salve em um arquivo chamado output.txt
