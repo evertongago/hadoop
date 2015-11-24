@@ -25,15 +25,15 @@ RUN apt-get -y install vim
 RUN apt-get -y install unzip
 
 RUN wget -P /opt http://ftp.unicamp.br/pub/apache/hadoop/common/hadoop-1.2.1/hadoop-1.2.1.tar.gz
-RUN wget -P /opt http://ftp.unicamp.br/pub/apache/mahout/0.9/mahout-distribution-0.9.tar.gz
+RUN wget -p /opt http://ftp.unicamp.br/pub/apache/mahout/0.10.0/mahout-distribution-0.10.0.tar.gz
 RUN wget -P /root http://www.grouplens.org/system/files/ml-100k.zip
 RUN wget -P /root https://www.dropbox.com/s/tethwjgxvz6swrf/show_recommendations.py?dl=0
 
 RUN tar xvfz /opt/hadoop-1.2.1.tar.gz -C /opt
-RUN tar xvfz /opt/mahout-distribution-0.9.tar.gz -C /opt
+RUN tar xvfz /opt/mahout-distribution-0.10.0.tar.gz -C /opt
 RUN unzip /root/ml-100k.zip -d /root
 RUN rm /opt/hadoop-1.2.1.tar.gz
-RUN rm /opt/mahout-distribution-0.9.tar.gz
+RUN rm /opt/mahout-distribution-0.10.0.tar.gz
 RUN rm /root/ml-100k.zip
 
 RUN echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /opt/hadoop-1.2.1/conf/hadoop-env.sh
