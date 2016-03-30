@@ -22,18 +22,15 @@ RUN echo "oracle-java7-installer shared/accepted-oracle-license-v1-1 boolean tru
 RUN apt-get -y install oracle-java7-installer
 
 RUN apt-get -y install vim
-RUN apt-get -y install unzip
 
+ADD ml-100k /root/ml-100k
 RUN wget -P /opt http://ftp.unicamp.br/pub/apache/hadoop/common/hadoop-1.2.1/hadoop-1.2.1.tar.gz
 RUN wget -P /opt https://archive.apache.org/dist/mahout/0.9/mahout-distribution-0.9.tar.gz
-RUN wget -P /root http://www.grouplens.org/system/files/ml-100k.zip
 
 RUN tar xvfz /opt/hadoop-1.2.1.tar.gz -C /opt
 RUN tar xvfz /opt/mahout-distribution-0.9.tar.gz -C /opt
-RUN unzip /root/ml-100k.zip -d /root
 RUN rm /opt/hadoop-1.2.1.tar.gz
 RUN rm /opt/mahout-distribution-0.9.tar.gz
-RUN rm /root/ml-100k.zip
 
 ADD show_recommendations.py /root/ml-100k/show_recommendations.py
 
